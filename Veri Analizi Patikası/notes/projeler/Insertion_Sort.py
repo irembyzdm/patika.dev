@@ -35,3 +35,41 @@ ve 16 > 2 olduğundan
 2 < 6 yani yer değişikliği yok.
 
 Algoritma tamamlandı ve dizinin son hali: [2, 6, 16, 18, 22, 27]
+
+# Soru-2 Big-O gösterimini yazınız.
+
+Insertion Sort'un çalışma mantığı şu şekildedir:
+Algoritma, listenin sıralı kısmını adım adım büyütürken, her elemanı sıralı kısmın içine yerleştirir.
+Her elemanı sıralı kısma yerleştirirken, bu elemanın doğru pozisyonunu bulmak için sıralı kısmı tarar. 
+Bu işlem her eleman için yapılır ve eleman sayısı arttıkça taranan sıralı kısım da artar. 
+Bu nedenle, en kötü durumda (örneğin, tersten sıralı bir liste) her elemanı yerine yerleştirmek 
+için sıralı kısımın tamamını tararız ve bu durumun karmaşıklığı O(n^2) olur.
+
+# Soru-3:
+# Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer?
+
+# Average case: Aradığımız sayının ortada olması
+# Worst case: Aradığımız sayının sonda olması
+# Best case: Aradığımız sayının dizinin en başında olması.
+
+Average case: Aradığımız sayının ortada olması
+
+# Soru-4: 
+# [7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+
+Selection Sort, bir dizi içerisindeki elemanları genellikle küçükten büyüğe doğru 
+sıralayan bir sıralama algoritmasıdır. 
+Temel mantığı, her adımda dizideki en küçük elemanı bulup, onu sıralanmış bölümün sonuna yerleştirmektir.
+
+- Dizideki en küçük eleman bulunup baştaki sayı ile değiştirilir:
+2* 3, 5, 8, 7, 9, 4, 15, 6
+
+- Kalanlar arasından en küçük bulunur. Burada en küçük 3 olduğu için ve başta olduğu için
+değişiklik yok
+2, 3* 5, 8, 7, 9, 4, 15, 6
+
+- En küçük eleman 4 dolayısıyla 5 ile yer değiştirir:
+2, 3, 4* 8, 7, 9, 5, 15, 6
+
+- En küçük eleman 5 ile 8 sayısı yer değiştirir:
+2, 3, 4, 5* 7, 9, 8, 15, 6
